@@ -1,0 +1,14 @@
+body {
+    background-image: linear-gradient(to bottom right, #4B57A1 0%, #231942 50%, #231942 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#main {
+    background-image: url('images/laurie-a-bientot.png'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-size: auto 100%, cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top; /* Alignez l'image à droite en haut */
+    height: 100vh;
+}
