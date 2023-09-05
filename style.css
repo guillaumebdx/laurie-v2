@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right top;
-    height: 100vh;
+    height: 98vh;
 }
 @media (max-width: 768px) {
     #main {
@@ -21,4 +21,12 @@ body {
         background-position: unset;
         height: unset;
     }
+}
+.flex {
+    display: flex;
+}
+nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
 }
