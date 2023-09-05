@@ -5,10 +5,20 @@ body {
     background-attachment: fixed;
 }
 #main {
-    background-image: url('images/laurie-a-bientot.png'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-image: url('images/laurie-a-bientot.png');
     background-size: auto 100%, cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: right top; /* Alignez l'image à droite en haut */
+    background-position: right top;
     height: 100vh;
+}
+@media (max-width: 768px) {
+    #main {
+        background-image: unset;
+        background-size: unset;
+        background-repeat: unset;
+        background-attachment: unset;
+        background-position: unset;
+        height: unset;
+    }
 }
