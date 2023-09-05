@@ -48,7 +48,9 @@ body {
     background-position: right top;
     height: 98vh;
 }
-
+.center {
+    text-align: center;
+}
 .flex {
     display: flex;
 }
@@ -87,7 +89,24 @@ body {
 .mobile-container {
     display: none;
 }
+h1 {
+    font-size: 3rem;
+}
+.title-desktop {
+    color: #D9D9D9;
+    text-align: center;
+    font-size: 6rem;
+}
+.main-desktop {
+    text-align: center;
+}
+.desktop-container {
+    width: 75%;
+}
 @media (max-width: 1000px) {
+    .desktop-container {
+        display: none;
+    }
     #main {
         background-image: unset;
         background-size: unset;
@@ -98,10 +117,11 @@ body {
     }
     .main-mobile {
         background-image: url('images/laurie-mobile.png');
-        background-size: auto 100%, cover;
+        background-size: auto 80%, cover;
         background-repeat: no-repeat;
         background-position: bottom right;
         height: 80vh;
+        text-align: center;
     }
     .desktop-nav {
         display: none;
@@ -132,4 +152,18 @@ body {
     .menu-title {
         display: none;
     }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(41,31,77,1) 65%, rgba(41,31,77,0) 100%);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    z-index: 999;
 }
