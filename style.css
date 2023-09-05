@@ -1,8 +1,44 @@
+/********************** Police *******************/
+@font-face {
+    font-family: 'FuturaLT-Bold';
+    src: url('fonts/FuturaLT-Bold.eot'); /* EOT */
+    src: url('fonts/FuturaLT-Bold.woff2') format('woff2'),
+    url('fonts/FuturaLT-Bold.woff') format('woff'),
+    url('fonts/FuturaLT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaLT-Condensed';
+    src: url('fonts/FuturaLT-Condensed.eot'); /* EOT */
+    src: url('fonts/FuturaLT-Condensed.woff2') format('woff2'),
+    url('fonts/FuturaLT-Condensed.woff') format('woff'),
+    url('fonts/FuturaLT-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaLT-CondensedOblique';
+    src: url('fonts/FuturaLT-CondensedOblique.eot'); /* EOT */
+    src: url('fonts/FuturaLT-CondensedOblique.woff2') format('woff2'),
+    url('fonts/FuturaLT-CondensedOblique.woff') format('woff'),
+    url('fonts/FuturaLT-CondensedOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.bold {
+    font-family: 'FuturaLT-Bold', sans-serif;
+}
+
 body {
     background-image: linear-gradient(to bottom right, #4B57A1 0%, #231942 50%, #231942 100%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'FuturaLT-Condensed', sans-serif;
 }
 #main {
     background-image: url('images/laurie-a-bientot.png');
@@ -29,4 +65,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+}
+
+.menu-item {
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-right: 25px;
 }
