@@ -34,11 +34,12 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #4B57A1 0%, #231942 50%, #231942 100%);
+    background: linear-gradient(306deg, #190728 10.26%, rgba(25, 7, 40, 0.90) 29.58%, #292250 62.83%, #4B57A1 93.28%), #4B57A1;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'FuturaLT-Condensed', sans-serif;
+    touch-action: pan-x pan-y;
 }
 #main {
     background-image: url('images/laurie-a-bientot.png');
@@ -47,6 +48,24 @@ body {
     background-attachment: fixed;
     background-position: right top;
     height: 98vh;
+}
+#mobile-menu {
+    position: absolute;
+    top: 50px;
+    border-radius: 4px;
+    background-color: #EFB8C8;
+    display: none;
+}
+.block {
+    display: block !important;
+}
+.item-mobile {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.menu-item.item-mobile.last.bold {
+    margin-bottom: 15px;
 }
 .center {
     text-align: center;
@@ -173,6 +192,7 @@ h1 {
         display: flex;
     }
     .mobile-nav {
+        position: relative;
         display: flex;
         justify-content: space-between;
         color: #EFB8C8;
@@ -222,4 +242,10 @@ footer {
     z-index: 999;
     align-items: center;
     justify-content: center;
+}
+.active-mobile {
+    color: #323067;
+}
+.active-desktop {
+    color: #EFB8C8;
 }

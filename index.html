@@ -11,8 +11,22 @@
 <body>
 <div id="main">
     <nav class="mobile-nav bold flex">
-        <div class="block-menu">
+        <div class="block-menu" id="burger">
             <img src="images/icon/burger.svg" alt="" class="burger-svg"> <span class="menu-title">MENU</span>
+        </div>
+        <div id="mobile-menu">
+            <div class="menu-item item-mobile bold active-mobile">
+                ACCUEIL
+            </div>
+            <div class="menu-item item-mobile bold">
+                GALERIE
+            </div>
+            <div class="menu-item item-mobile bold">
+                BIOGRAPHIE
+            </div>
+            <div class="menu-item item-mobile last bold">
+                CONTACT
+            </div>
         </div>
         <div class="social-networks-mobile flex">
             <div class="social-network">
@@ -50,7 +64,7 @@
     </div>
     <nav class="flex desktop-nav">
         <div class="menu-items flex">
-            <div class="menu-item bold">
+            <div class="menu-item bold active-desktop">
                 ACCUEIL
             </div>
             <div class="menu-item bold">
@@ -100,5 +114,6 @@
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
