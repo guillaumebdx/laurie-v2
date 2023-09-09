@@ -29,6 +29,11 @@
     font-style: italic;
 }
 
+a {
+    color: unset;
+    text-decoration: none;
+}
+
 .bold {
     font-family: 'FuturaLT-Bold', sans-serif;
 }
@@ -88,6 +93,10 @@ body {
     font-weight: 700;
     line-height: normal;
     padding-right: 40px;
+    transition: color 0.4s;
+}
+.menu-item:hover {
+    color: #EFB8C8;
 }
 .social-networks {
     align-items: center;
@@ -274,6 +283,10 @@ h1 {
 @media (max-width: 410px) {
     .menu-title {
         display: none;
+    }
+    .menu-item:hover {
+        color: #323067;
+        cursor: pointer;
     }
 }
 @media (max-width: 600px) {
