@@ -115,6 +115,66 @@ h1 {
     color: #D9D9D9;
     text-align: center;
     font-size: 6rem;
+    position: relative;
+}
+.spark-letter {
+    position: relative;
+}
+
+.spark-letter::before {
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 97%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 34px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    animation: spark 4s ease-in-out infinite;
+}
+
+.spark-letter::after {
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 97%;
+    transform: translate(-50%, -50%) rotate(45deg); /* Rotation opposée */
+    width: 34px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    animation: spark2 4s ease-in-out infinite;
+}
+
+@keyframes spark {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0) rotate(-45deg);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0) rotate(45deg);
+    }
+}
+
+@keyframes spark2 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0) rotate(45deg);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1) rotate(90deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0) rotate(145deg);
+    }
 }
 .main-desktop {
     text-align: center;
