@@ -229,11 +229,18 @@ h1 {
     width: 210px;
     height: 42px;
     color: #EFB8C8;
+    transition: color .4s;
 }
 .btn-container {
     justify-content: center;
     margin-top: 35px;
 }
+
+.boutique-desktop-btn:hover {
+    color: #EF82A2;
+    border-color: #EF82A2;
+}
+
 @media (max-width: 1000px) {
     .desktop-container {
         display: none;
