@@ -20,6 +20,16 @@
 }
 
 @font-face {
+    font-family: 'FuturaLT-Book';
+    src: url('fonts/FuturaLT-Book.eot'); /* EOT */
+    src: url('fonts/FuturaLT-Book.woff2') format('woff2'),
+    url('fonts/FuturaLT-Book.woff') format('woff'),
+    url('fonts/FuturaLT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'FuturaLT-CondensedOblique';
     src: url('fonts/FuturaLT-CondensedOblique.eot'); /* EOT */
     src: url('fonts/FuturaLT-CondensedOblique.woff2') format('woff2'),
@@ -53,6 +63,27 @@ body {
     background-attachment: fixed;
     background-position: right top;
     height: 98vh;
+}
+.main-page {
+    background-color: white;
+}
+.article {
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    align-items: end;
+}
+.left-article {
+    width: 40vw;
+    font-family: 'FuturaLT-Book', sans-serif;
+}
+.left-article p {
+    width: 96%;
+}
+.right-article {
+    width: 40%;
+}
+.right-article img {
+    width: 100%;
 }
 #mobile-menu {
     position: absolute;
@@ -242,6 +273,24 @@ h1 {
 }
 
 @media (max-width: 1000px) {
+    .article {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .left-article {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100vw;
+    }
+    .left-article p {
+        width: 90%;
+    }
+    .right-article {
+        width: 100vw;
+    }
+    .right-article img {
+        max-width: 95vw;
+    }
     .desktop-container {
         display: none;
     }
