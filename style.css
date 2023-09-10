@@ -55,6 +55,7 @@ body {
     background-attachment: fixed;
     font-family: 'FuturaLT-Condensed', sans-serif;
     touch-action: pan-x pan-y;
+    margin: 0;
 }
 #main {
     background-image: url('images/laurie-a-bientot.png');
@@ -70,7 +71,7 @@ body {
 .article {
     justify-content: space-evenly;
     margin-bottom: 25px;
-    align-items: end;
+    align-items: flex-start;
 }
 .left-article {
     width: 40vw;
@@ -266,13 +267,50 @@ h1 {
     justify-content: center;
     margin-top: 35px;
 }
-
+.main-contact {
+    background-image: url("images/background-contact.png");
+    background-size: auto 80%, cover;
+    background-position: top center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-contact h2 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: -6px;
+}
+.separation {
+    height: 5rem;
+    width: 5px;
+    background-color: white;
+    margin-top: -5rem;
+}
+.contact-block {
+    text-align: center;
+    margin-top: -8rem;
+}
+.contact-block a {
+    color: white;
+}
 .boutique-desktop-btn:hover {
     color: #EF82A2;
     border-color: #EF82A2;
 }
 
 @media (max-width: 1000px) {
+    .main-contact {
+        flex-direction: column;
+    }
+    .separation {
+        transform: rotate(90deg);
+    }
+    .main-contact h2 {
+        margin-bottom: 10px;
+    }
     .article {
         flex-direction: column;
         align-items: unset;
