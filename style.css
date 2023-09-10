@@ -68,6 +68,13 @@ body {
 .main-page {
     background-color: white;
 }
+.main-galerie {
+    background-color: white;
+    padding: 5rem;
+}
+#my-gallery {
+    text-align: center;
+}
 .article {
     justify-content: space-evenly;
     margin-bottom: 25px;
@@ -302,6 +309,10 @@ h1 {
 }
 
 @media (max-width: 1000px) {
+    .main-galerie {
+        padding: unset;
+        text-align: center;
+    }
     .main-contact {
         flex-direction: column;
     }
