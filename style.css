@@ -58,7 +58,7 @@ body {
     margin: 0;
 }
 #main {
-    background-image: url('images/laurie-a-bientot.png');
+    background-image: url('images/laurie-a-bientot-2.png');
     background-size: auto 100%, cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -355,7 +355,7 @@ h1 {
         height: unset;
     }
     .main-mobile {
-        background-image: url('images/laurie-mobile.png');
+        background-image: url('images/laurie-mobile-2.png');
         background-size: auto 80%, cover;
         background-repeat: no-repeat;
         background-position: top right;
