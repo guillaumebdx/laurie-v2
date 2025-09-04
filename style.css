@@ -275,6 +275,9 @@ h1 {
     justify-content: center;
     margin-top: 35px;
 }
+.newsletter {
+	margin-top: 4em;
+}
 .main-contact {
     background-image: url("images/background-contact.png");
     background-size: auto 80%, cover;
