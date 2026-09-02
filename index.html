@@ -84,17 +84,18 @@
         </div>
         <div class="hero-visual" aria-hidden="true">
             <div class="hero-glow"></div>
-            <div class="hero-portrait">
+            <picture class="hero-portrait">
+                <source media="(max-width: 1023px)" srcset="images/opt/laurie-mobile.webp" width="567" height="674">
                 <img src="images/opt/laurie-hero.webp"
                      srcset="images/opt/laurie-hero-600.webp 600w, images/opt/laurie-hero.webp 903w"
-                     sizes="(min-width: 900px) 45vw, 100vw"
+                     sizes="(min-width: 1024px) 52vw, 100vw"
                      width="903" height="903" alt="" fetchpriority="high" decoding="async">
-            </div>
+            </picture>
         </div>
         <div class="hero-actions">
             <a class="btn btn-primary" href="https://linktr.ee/laurieperet" target="_blank" rel="noopener" title="Acheter des billets pour le spectacle">Billets <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             <a class="btn btn-ghost" href="https://www.laurieperet.shop/" target="_blank" rel="noopener" title="Voir la boutique officielle">Boutique</a>
-            <a class="btn btn-ghost" href="https://page.delight-data.com/laurieperet/news.html" target="_blank" rel="noopener" title="Recevoir les infos">Être informé</a>
+            <a class="btn btn-ghost" href="https://page.delight-data.com/laurieperet/news.html" target="_blank" rel="noopener" title="Recevoir les infos"><span class="lbl-long">Être informé</span><span class="lbl-short">Infos</span></a>
         </div>
         </div>
     </section>
